@@ -48,11 +48,9 @@
 }
 .title{
   font-size: 15px !important;
-  max-height: 20px;
 }
 .desc{
   color: rgba(255, 255, 255, 0.5);
-  max-height: 20px;
 }
 audio {
   width: 100%;
