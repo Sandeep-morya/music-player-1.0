@@ -1,0 +1,34 @@
+.contact_div{
+    display: none;
+    width: 170px;
+    row-gap: 10px;
+    grid-template-columns: 4fr 6fr;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:70px;
+    right: 18%;
+    padding: 20px;
+    background:white;
+    border-radius: var(--decent);
+    color: black;
+    box-shadow: var(--shadow);
+    font-weight: bold;
+}
+.contact_div i{
+    color: black;
+    font-size: 34px;
+    margin: 1px;
+}
+.g:hover{color:rgb(20, 20, 20);font-size: 35px;}
+.l:hover{color:rgb(0, 81, 255);font-size: 35px;}
+.f:hover{color:blue;font-size: 35px;}
+.w:hover{color:rgb(12, 255, 4);font-size: 35px;}
+.t:hover{color:rgb(0, 183, 255);font-size: 35px;}
+.i:hover{color:rgb(255, 0, 128);font-size: 35px;}
+
+.contact_div .fa-arrow-left-long{
+    font-size: 22px !important;
+    grid-column: span 2;
+    margin-top:-10px !important;
+}

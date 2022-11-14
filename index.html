@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MusicPlayer</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/3225/3225343.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/lists.css">
+    
+    <!-- https://i.ibb.co/K7kHxxy/online-shop.png (solid) -->
+    <!-- https://i.ibb.co/0nfxGfZ/shopbag-logo.png (Transparent) -->
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <div class="logo_div">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3225/3225343.png"
+          /><span class="logo_name">MusicPlayer</span>
+        </div>
+        <div class="search_bar_div">
+          <input type="text" id="search_bar" placeholder="Song, Artist, Album" />
+          <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="user_div">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+          <div class="user_info">
+            <i class="fa-solid fa-xmark-large fa-xmark"></i>
+            <span class="fs"></span>
+            <span class="profile al">My Profile</span>
+            <span class="favourites al">Favourites</span>
+            <span class="sell_products al">Playlists</span>
+            <span class="cart al">Download</span>
+            <span class="logout al">Logout</span>
+          </div>
+        </div>
+        <div class="extra">
+          <span class="home_btn">Home</span>
+          <span class="seller">Playlists</span>
+          <span class="contact_btn">Contact</span>
+          <div class="cart">
+            <i class="fa-solid fa-download"></i>
+            <sup>0</sup>
+          </div>
+          <div class="contact_div">
+            <i class="fa-sharp fa-solid fa-arrow-left-long"></i>
+            <i class="fa-brands fa-github g"></i> Github
+            <i class="fa-brands fa-linkedin l"></i> Linkedin
+            <i class="fa-brands fa-instagram i"></i> Instagram
+            <i class="fa-brands fa-facebook f"></i> Facebook
+            <i class="fa-brands fa-whatsapp w"></i> Whatsapp
+            <i class="fa-brands fa-telegram t"></i> Telegram
+          </div>
+        </div>
+        
+      </header>
+      <div class="lists">
+      
+      </div>
+   
+    </div>
+    <section class="auth_div">
+      <div class="sidebar">
+        <i class="fa-sharp fa-solid fa-arrow-left-long fa-arrow-left"></i>
+        <div>Login to Continue</div>
+        <div>
+          Download Songs,<br />explore MusicPlayer website <br />& get access to
+          Your playlist
+        </div>
+        <div></div>
+      </div>
+      <div class="auth_details_div">
+        <div class="login_div">
+          <span class="heading">Fill Your Credentails Carefully !</span>
+          <form class="login_form">
+            <input required type="text" placeholder="Enter Username" />
+            <input required type="password" placeholder="Enter Password" />
+            <div class="terms">
+              By clicking on Login you are accepting our
+              <span class="highlight">Terms& conditions</span> as well as
+              <span class="highlight">Privacy Policy.</span>
+            </div>
+            <input class="login_btn" type="submit" value="Login" />
+          </form>
+          <form class="signup_form">
+            <input required type="text" placeholder="Username" />
+            <input required type="email" placeholder="Email" />
+            <input required type="password" placeholder="Password" />
+            <input required type="tel" placeholder="Mobile Number" />
+            <input class="signup_btn" type="submit" value="Register" />
+          </form>
+          <p class="switch_div">
+            Don't have an account ?
+            <span class="highlight">Create a New one</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./js/auth.js"></script>
+  <script type="module" src="./js/navbar.js"></script>
+  <script
+    src="https://kit.fontawesome.com/6f51b9c2b0.js"
+    crossorigin="anonymous"
+  ></script>
+  <script type='module' src="js/index.js"></script>
+</html>

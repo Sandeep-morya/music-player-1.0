@@ -1,0 +1,136 @@
+.auth_div {
+  display: none;
+  /* display: flex; */
+  width: 60%;
+  height: 500px;
+  position: absolute;
+  background-color: rgb(225, 224, 226);
+  justify-content: space-between;
+  top: 15%;
+  left: 20%;
+  z-index: 3;
+  border-radius: var(--decent);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.sidebar {
+  text-align: center;
+  width: 40%;
+  height: 100%;
+  background: var(--gradient);
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--decent);
+}
+.sidebar :first-child {
+  position: absolute;
+  top: 3%;
+  font-size: 25px;
+}
+.sidebar :nth-child(2) {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.sidebar :nth-child(3) {
+  margin-top: 10px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 30px 0;
+}
+.sidebar :last-child {
+  width: 100%;
+  margin: auto;
+  aspect-ratio: 1;
+  background: url(https://cdn-icons-png.flaticon.com/512/3225/3225343.png);
+  background-position: center;
+  background-size: 100%;
+  border-radius: var(--round);
+  background-repeat: no-repeat;
+  filter: drop-shadow(var(--shadow));
+}
+.auth_details_div {
+  width: 60%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login_form {
+  width: 90%;
+  display: block;
+}
+form {
+  margin-top: 10px;
+}
+.heading {
+  color: var(--main);
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 18px;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p {
+  padding-left: 18px;
+  font-size: 16px;
+}
+form input {
+  width: 100%;
+  padding: 18px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background: rgba(245, 245, 245);
+  margin: 15px;
+  border-radius: 0.3rem;
+  box-shadow: var(--shadow);
+}
+form div {
+  padding: 15px;
+  font-size: 14px;
+}
+input[type="submit"] {
+  background: var(--gradient);
+  color: white;
+}
+.signup_form {
+  display: none;
+  width: 90%;
+}
+.signup_form input {
+  padding: 14px;
+  margin: 10px !important;
+}
+
+/* Mobile Phones */
+@media only screen and (max-width: 600px) {
+  .auth_div {
+    flex-direction: column;
+    width: 95%;
+    height: max-content;
+    top: 1.5%;
+    left: 2.5%;
+  }
+  .sidebar {
+    width: 100%;
+    height: 180px;
+    align-items: center;
+  }
+  .sidebar :first-child {left: 5%;}
+  .sidebar :nth-child(3) {padding: 5px;width: 70%}
+  .sidebar :last-child {display: none}
+  .auth_details_div {width: 100%;padding: 20px 30px;}
+  .login_form {width: 100%}
+  .heading {padding: 0}
+  p {padding: 0}
+  form input {margin: 15px 0}
+  form div {padding: 0}
+  .signup_form {width: 100%}
+  .signup_form input {padding: 18px; margin: 15px 0 !important}
+}
