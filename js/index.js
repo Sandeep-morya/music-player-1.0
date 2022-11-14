@@ -34,6 +34,8 @@ function displaylist(array){
         player.className='player'
         info.className='info';
         btn.className='fa-sharp fa-solid fa-circle-play';
+        title.className='title';
+        desc.className='desc';
 
         img.src=el.image;
         title.textContent=el.title;

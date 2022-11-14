@@ -46,6 +46,14 @@
   grid-column: span 3;
   width: 100%;
 }
+.title{
+  font-size: 15px !important;
+  max-height: 20px;
+}
+.desc{
+  color: rgba(255, 255, 255, 0.5);
+  max-height: 20px;
+}
 audio {
   width: 100%;
 }
@@ -54,15 +62,15 @@ audio {
     animation: name 5s linear infinite alternate-reverse ;
 }
 @keyframes name {
-    50%{
-        background-position: center bottom;
-    }
-    0%{
-        background-position: left top ;
-    }
-    100%{
-        background-position: right top;
-    }
+  50%{
+      background-position:bottom center;
+  }
+  0%{
+      background-position:bottom left ;
+  }
+  100%{
+      background-position:bottom right;
+  }
 }
 /* Mobile Phones */
 @media only screen and (max-width: 600px) {
@@ -82,15 +90,5 @@ audio {
     animation: name 2s ease-in infinite alternate-reverse;
 }
   
-  @keyframes name {
-    50%{
-        background-position:bottom center;
-    }
-    0%{
-        background-position:bottom left ;
-    }
-    100%{
-        background-position:bottom right;
-    }
-}
+  
 }
